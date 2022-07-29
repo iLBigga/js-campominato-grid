@@ -14,7 +14,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 main {
@@ -26,30 +26,25 @@ main {
 }
 
 .table {
-    width: 1000px;
+    max-width: 1000px;
+    flex-basis: 100%;
     background-color: aquamarine;
     aspect-ratio: 1/1;
     margin: 0 auto;
-}
-
-.table10 {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-}
-
-.table9 {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-}
-
-.table7 {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
 }
 
 .square {
     aspect-ratio: 1/1;
     border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clicked {
+    background-color: brown;
 }
 
 .main-footer {
